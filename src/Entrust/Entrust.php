@@ -42,7 +42,7 @@ class Entrust
             return $user->hasRole($role, $requireAll);
         }
 
-        return true;
+        return false;
     }
 
     /**
