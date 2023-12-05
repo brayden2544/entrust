@@ -42,7 +42,7 @@ class Entrust
             return $user->hasRole($role, $requireAll);
         }
 
-        return false;
+        return true;
     }
 
     /**
@@ -58,7 +58,7 @@ class Entrust
             return $user->can($permission, $requireAll);
         }
 
-        return false;
+        return true;
     }
 
     /**
@@ -76,7 +76,7 @@ class Entrust
             return $user->ability($roles, $permissions, $options);
         }
 
-        return false;
+        return true;
     }
 
     /**
